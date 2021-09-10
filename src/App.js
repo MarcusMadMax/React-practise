@@ -1,15 +1,10 @@
-import Header from './components/Header';
-import Main from './components/Main';
-import Footer from './components/Footer';
+import React from 'react'
 import './css/App.css';
+import Jokes from './jokes'
 
-function App() {
+const App = () => {
   return (
-    <div className="wrapper">
-      <Header />
-      <Main />
-      <Footer />
-    </div>
+    <Jokes />
   );
 }
 
