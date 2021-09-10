@@ -1,10 +1,21 @@
 import React from 'react'
-import './css/App.css';
-import Jokes from './jokes'
+import Jokes from './Jokes'
+import jokesData from './jokesData'
 
 const App = () => {
+
+  const jokeComponents = jokesData.map((joke) => {
+    return (
+      <Jokes key={joke.id} question={joke.question} answer={joke.punchLine} />
+    )
+  })
+
+  // const jokeComponents = jokesData.map(joke => <Jokes question={joke.question} answer={joke.punchLine} />)
+
   return (
-    <Jokes />
+    <div className='jokes'>
+      {jokeComponents}
+    </div>
   );
 }
 
