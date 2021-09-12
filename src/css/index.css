@@ -9,4 +9,54 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }
+
+.wrapper {
+  width: 40%;
+  margin: 2em auto;
+  padding: 2em;
+  background-color: antiquewhite;
+}
+
+.wrapper .product h3 {
+  text-align: center;
+  -webkit-animation: swirly 5s linear 2s infinite;
+          animation: swirly 5s linear 2s infinite;
+}
+
+.wrapper .product :nth-child(2) {
+  color: red;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+@-webkit-keyframes swirly {
+  0% {
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+  }
+  50% {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+  }
+  100% {
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+  }
+}
+
+@keyframes swirly {
+  0% {
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+  }
+  50% {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+  }
+  100% {
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+  }
+}
 /*# sourceMappingURL=index.css.map */
