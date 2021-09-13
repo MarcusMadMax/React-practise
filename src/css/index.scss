@@ -17,19 +17,29 @@ code {
   padding: 2em;
   background-color: antiquewhite;
 
-  .product {
-    h3 {
-      text-align: center;
+  :nth-child(2) {
+    > h3 {
       animation: swirly 5s linear 2s infinite;
     }
+  }
 
-    :nth-child(2) {
+  .product {
+    h3 {
       color: red;
       font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
       font-size: 1.5em;
       text-align: center;
     }
 
+    :nth-child(2) {
+      font-size: 1.5em;
+      font-weight: 700;
+      color: rgb(113, 113, 113);
+    }
+
+    p {
+      text-align: center;
+    }
     @keyframes swirly {
       0% {
         transform: scaleX(0);

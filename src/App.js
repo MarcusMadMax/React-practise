@@ -3,15 +3,16 @@ import Product from './Product'
 import productsData from './productsData'
 
 const App = () => {
-  const productsComponent = productsData.map((item) => {
+  const productComponent = productsData.map((item) => {
     return (
       <Product key={item.id} product={item} />
     )
   })
   return (
     <div className='wrapper'>
-      {productsComponent}
+      {productComponent}
     </div>
   )
 }
-export default App;
+
+export default App

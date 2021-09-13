@@ -17,16 +17,25 @@ code {
   background-color: antiquewhite;
 }
 
-.wrapper .product h3 {
-  text-align: center;
+.wrapper :nth-child(2) > h3 {
   -webkit-animation: swirly 5s linear 2s infinite;
           animation: swirly 5s linear 2s infinite;
 }
 
-.wrapper .product :nth-child(2) {
+.wrapper .product h3 {
   color: red;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   font-size: 1.5em;
+  text-align: center;
+}
+
+.wrapper .product :nth-child(2) {
+  font-size: 1.5em;
+  font-weight: 700;
+  color: #717171;
+}
+
+.wrapper .product p {
   text-align: center;
 }
 
