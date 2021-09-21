@@ -6,10 +6,6 @@ body {
   background-color: aqua;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
-}
-
 .wrapper {
   width: 40%;
   margin: 2em auto;
@@ -17,55 +13,19 @@ code {
   background-color: antiquewhite;
 }
 
-.wrapper :nth-child(2) > h3 {
-  -webkit-animation: swirly 5s linear 2s infinite;
-          animation: swirly 5s linear 2s infinite;
+.wrapper .todos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.wrapper .product h3 {
-  color: red;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
-  font-size: 1.5em;
-  text-align: center;
-}
-
-.wrapper .product :nth-child(2) {
-  font-size: 1.5em;
-  font-weight: 700;
-  color: #717171;
-}
-
-.wrapper .product p {
-  text-align: center;
-}
-
-@-webkit-keyframes swirly {
-  0% {
-    -webkit-transform: scaleX(0);
-            transform: scaleX(0);
-  }
-  50% {
-    -webkit-transform: scaleX(1);
-            transform: scaleX(1);
-  }
-  100% {
-    -webkit-transform: scaleX(0);
-            transform: scaleX(0);
-  }
-}
-
-@keyframes swirly {
-  0% {
-    -webkit-transform: scaleX(0);
-            transform: scaleX(0);
-  }
-  50% {
-    -webkit-transform: scaleX(1);
-            transform: scaleX(1);
-  }
-  100% {
-    -webkit-transform: scaleX(0);
-            transform: scaleX(0);
-  }
+.wrapper .todos input[type="checkbox"] {
+  width: 2em;
+  height: 2em;
+  margin-right: 2em;
+  cursor: pointer;
 }
 /*# sourceMappingURL=index.css.map */

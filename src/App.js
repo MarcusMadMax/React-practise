@@ -1,18 +1,26 @@
 import React from 'react'
-import Product from './Product'
-import productsData from './productsData'
+import TodosData from './todosData'
+import TodoItem from './TodoItem'
 
-const App = () => {
-  const productComponent = productsData.map((item) => {
+class App extends React.Component {
+  constructor() {
+    super()
+    this.state = {
+      todos: TodosData
+    }
+  }
+  render() {
+    const todosItem = this.state.todos.map((item) => {
+      return (
+        <TodoItem key={item.id} item={item} />
+      )
+    })
     return (
-      <Product key={item.id} product={item} />
+      <div className='wrapper'>
+        {todosItem}
+      </div>
     )
-  })
-  return (
-    <div className='wrapper'>
-      {productComponent}
-    </div>
-  )
+  }
 }
 
 export default App

@@ -7,49 +7,21 @@ body {
   background-color: aqua;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
-}
-
 .wrapper {
   width: 40%;
   margin: 2em auto;
   padding: 2em;
   background-color: antiquewhite;
 
-  :nth-child(2) {
-    > h3 {
-      animation: swirly 5s linear 2s infinite;
-    }
-  }
+  .todos {
+    display: flex;
+    align-items: center;
 
-  .product {
-    h3 {
-      color: red;
-      font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
-      font-size: 1.5em;
-      text-align: center;
-    }
-
-    :nth-child(2) {
-      font-size: 1.5em;
-      font-weight: 700;
-      color: rgb(113, 113, 113);
-    }
-
-    p {
-      text-align: center;
-    }
-    @keyframes swirly {
-      0% {
-        transform: scaleX(0);
-      }
-      50% {
-        transform: scaleX(1);
-      }
-      100% {
-        transform: scaleX(0);
-      }
+    input[type="checkbox"] {
+      width: 2em;
+      height: 2em;
+      margin-right: 2em;
+      cursor: pointer;
     }
   }
 }
