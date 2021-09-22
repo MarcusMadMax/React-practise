@@ -8,7 +8,7 @@ class App extends React.Component {
     this.state = {
       whatTodos: todosData
     }
-    this.handleClick = this.handleClick(this)
+    this.handleClick = this.handleClick.bind(this)
   }
 
   handleClick(id) {
@@ -16,11 +16,9 @@ class App extends React.Component {
   }
 
   render() {
-    const todos = this.state.whatTodos.map((item) => {
-      return (
-        <TodoItem key={item.id} item={item} handleClick={this.handleClick} />
-      )
-    })
+    const todos = this.state.whatTodos.map(item =>
+      <TodoItem key={item.id} item={item} handleClick={this.handleClick} />
+    )
     return (
       <div className='wrapper'>
         {todos}
