@@ -25,3 +25,21 @@ body {
     }
   }
 }
+
+.collapsible {
+  margin-bottom: 0.5em;
+
+  .content-parent {
+    height: 0;
+    overflow: hidden;
+    transition: height ease 1s;
+  }
+  h1 {
+    color: red;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+}
