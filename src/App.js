@@ -1,6 +1,6 @@
 import React from 'react'
-import todosData from './todosData'
 import TodosItem from './TodoItem'
+import todosData from './todosData'
 
 class App extends React.Component {
   constructor() {
@@ -18,21 +18,17 @@ class App extends React.Component {
         }
         return todo
       })
-      console.log(updatedTodos)
       return {
         todos: updatedTodos
       }
     })
   }
   render() {
-    let todo = this.state.todos.map((item) => {
-      return (
-        <TodosItem key={item.id} item={item} handleClick={this.handleClick} />
-      )
-    })
+    const todoItem = this.state.todos.map((item) => <TodosItem key={item.id} item={item}
+      handleClick={this.handleClick} />)
     return (
       <div className="wrapper">
-        {todo}
+        {todoItem}
       </div>
     )
   }
