@@ -13,6 +13,34 @@ body {
   padding: 2em;
   background-color: antiquewhite;
 
+  .collapsible {
+    margin-bottom: 0.5em;
+
+    .btn {
+      background-color: rgb(49, 123, 215);
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+      padding: 0.25em;
+      color: white;
+      font: unset;
+    }
+
+    .content-parent {
+      height: 0;
+      overflow: hidden;
+      transition: height ease 1s;
+    }
+    h1 {
+      color: blue;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
   .todos {
     display: flex;
     align-items: center;
@@ -23,23 +51,5 @@ body {
       margin-right: 2em;
       cursor: pointer;
     }
-  }
-}
-
-.collapsible {
-  margin-bottom: 0.5em;
-
-  .content-parent {
-    height: 0;
-    overflow: hidden;
-    transition: height ease 1s;
-  }
-  h1 {
-    color: red;
-  }
-
-  form {
-    display: flex;
-    flex-direction: column;
   }
 }

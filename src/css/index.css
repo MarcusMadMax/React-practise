@@ -13,6 +13,41 @@ body {
   background-color: antiquewhite;
 }
 
+.wrapper .collapsible {
+  margin-bottom: 0.5em;
+}
+
+.wrapper .collapsible .btn {
+  background-color: #317bd7;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  padding: 0.25em;
+  color: white;
+  font: unset;
+}
+
+.wrapper .collapsible .content-parent {
+  height: 0;
+  overflow: hidden;
+  -webkit-transition: height ease 1s;
+  transition: height ease 1s;
+}
+
+.wrapper .collapsible h1 {
+  color: blue;
+}
+
+.wrapper .collapsible form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 .wrapper .todos {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -27,30 +62,5 @@ body {
   height: 2em;
   margin-right: 2em;
   cursor: pointer;
-}
-
-.collapsible {
-  margin-bottom: 0.5em;
-}
-
-.collapsible .content-parent {
-  height: 0;
-  overflow: hidden;
-  -webkit-transition: height ease 1s;
-  transition: height ease 1s;
-}
-
-.collapsible h1 {
-  color: red;
-}
-
-.collapsible form {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
 }
 /*# sourceMappingURL=index.css.map */

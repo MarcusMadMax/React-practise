@@ -4,17 +4,17 @@ import Collapsible from './Collapsible'
 function App() {
   return (
     <div className='wrapper'>
-      <Collapsible label='lets see'>
+      <Collapsible label='Lets see'>
         <h1>Hello there</h1>
         <h3>Please answer this question</h3>
       </Collapsible>
-      <Collapsible label='some more'>
+      <Collapsible label='Some more'>
         <form action="">
           <label htmlFor="question1">Question 1</label>
           <input type="text" id='question1' />
         </form>
       </Collapsible>
-      <Collapsible label='and more'>
+      <Collapsible label='And more'>
         <form action="">
           <label htmlFor="question2">Question 2</label>
           <input type="text" id='question2' />
