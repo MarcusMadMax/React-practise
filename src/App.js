@@ -34,6 +34,15 @@ function App() {
           <textarea />
         </form>
       </Collapsible>
+      <Collapsible label='About your credit' className='credit'>
+        <form action="">
+          <h3>What credit card are you applying for?</h3>
+          <input type="radio" name='credit' />
+          <label htmlFor="credit">visa</label>
+          <input type="radio" name='credit' />
+          <label htmlFor="credit">master</label>
+        </form>
+      </Collapsible>
     </div>
   )
 }
